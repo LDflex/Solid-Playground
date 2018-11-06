@@ -1,8 +1,8 @@
-body {
+body, input, button {
   font: 12pt/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-main {
+body {
   max-width: 800px;
   margin: 0 auto;
 }
