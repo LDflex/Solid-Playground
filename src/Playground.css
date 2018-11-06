@@ -1,0 +1,17 @@
+.playground p.expression {
+  display: flex;
+  align-items: center;
+}
+.playground p.expression * {
+  font-family: monospace !important;
+}
+.playground p.expression input {
+  flex-grow: 1;
+}
+
+.playground p.single [data-error]:before {
+  content: 'Expression error: ' attr(data-error);
+  font-style: italic;
+  font-weight: bold;
+  color: red;
+}
