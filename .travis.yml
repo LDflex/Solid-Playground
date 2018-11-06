@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+  - 10
+  - node
+env:
+  - DEFAULT_NODE_VERSION=10
+    CXX=g++-4.9
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.9
+
+before_script:
+  - PUBLIC_URL=https://solid.github.io/ldflex-playground/ yarn build
+
+after_success:
+  - if [ "$TRAVIS_NODE_VERSION" == "$DEFAULT_NODE_VERSION" ]; then
+      ./.travis_build_pages;
+    fi
+
+cache:
+  apt: true
