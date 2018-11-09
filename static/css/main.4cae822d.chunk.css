@@ -1,2 +1,0 @@
-body,button,input{font:12pt/1.4 Helvetica Neue,Helvetica,Arial,sans-serif}body{max-width:800px;margin:0 auto}header button{margin-left:2em}footer{font-size:.8em}.playground p.expression{display:flex;align-items:center}.playground p.expression *{font-family:monospace!important}.playground p.expression input{flex-grow:1}.playground p.single [data-error]:before{content:"Expression error: " attr(data-error);font-style:italic;font-weight:700;color:red}
-/*# sourceMappingURL=main.4cae822d.chunk.css.map */
