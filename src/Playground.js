@@ -10,6 +10,12 @@ export default class Playground extends React.Component {
       this.setState({ expression: this.props.expression });
   }
 
+  onExpressionChanged({ target: { value: expression } }) {
+    this.setState({ expression });
+    if (this.props.onExpressionChange)
+      this.props.onExpressionChange(expression);
+  }
+
   render() {
     const { expression } = this.state;
     return (
@@ -17,7 +23,7 @@ export default class Playground extends React.Component {
         <p className="expression">
           <label><code>solid.data</code></label>
           <input value={expression}
-                 onChange={e => this.setState({ expression: e.target.value })}/>
+                 onChange={e => this.onExpressionChanged(e)}/>
         </p>
         <h3>Single result</h3>
         <p className="single"><Value src={`${expression}`}/></p>
