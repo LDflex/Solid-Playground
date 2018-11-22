@@ -26,12 +26,12 @@ export default class Playground extends React.Component {
                  onChange={e => this.onExpressionChanged(e)}/>
         </p>
         <h3>Single result</h3>
-        <p className="single"><Value src={`${expression}`}/></p>
+        <p className="single"><Value src={expression}/></p>
         <h3>Multiple results (first 10)</h3>
         <List src={expression} limit="10"/>
         <h3>Corresponding SPARQL query</h3>
         <pre className="sparql"><code>
-          <Value src={`${expression}.sparql`}/>
+          <Value src={expression && `${expression}.sparql`}/>
         </code></pre>
       </div>
     );
