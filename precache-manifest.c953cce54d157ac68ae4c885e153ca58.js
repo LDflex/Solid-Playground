@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "https://solid.github.io/ldflex-playground/static/js/runtime~main.71b16b14.js"
   },
   {
-    "revision": "56396da0e481f9376a56",
-    "url": "https://solid.github.io/ldflex-playground/static/js/main.56396da0.chunk.js"
+    "revision": "1e33650c792fbebd69f9",
+    "url": "https://solid.github.io/ldflex-playground/static/js/main.1e33650c.chunk.js"
   },
   {
     "revision": "97e47c1e96b1c082ee12",
     "url": "https://solid.github.io/ldflex-playground/static/js/1.97e47c1e.chunk.js"
   },
   {
-    "revision": "56396da0e481f9376a56",
+    "revision": "1e33650c792fbebd69f9",
     "url": "https://solid.github.io/ldflex-playground/static/css/main.b6849a8f.chunk.css"
   },
   {
-    "revision": "033d79684c03ede0d502393c893b8078",
+    "revision": "c5b740e4834099b9b2cb91dded706c61",
     "url": "https://solid.github.io/ldflex-playground/index.html"
   }
 ];
