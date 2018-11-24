@@ -22,9 +22,10 @@ class App extends React.Component {
     // If the user just logged in, show an example with their WebID
     if (!this.savedState.expression && this.props.webId !== webId)
       this.setState({ expression: `[${this.props.webId}].name` });
-    // Save the expression if it changed
-    if (this.state.expression !== expression)
-      this.savedState = this.state;
+  }
+
+  onExpressionChange = expression => {
+    this.savedState = { expression };
   }
 
   render() {
@@ -38,7 +39,7 @@ class App extends React.Component {
             Solid LDflex</a> expression
         </h2>
         <Playground expression={this.state.expression || defaultExpression }
-                    onExpressionChange={e => this.setState({ expression: e })}/>
+                    onExpressionChange={this.onExpressionChange}/>
       </main>
       <Footer/>
     </div>

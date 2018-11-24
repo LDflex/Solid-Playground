@@ -3,14 +3,27 @@ import { Value, List } from '@solid/react';
 import './Playground.css';
 
 export default class Playground extends React.Component {
-  state = {
-    input: this.props.expression,
-    expression: this.props.expression,
-  };
+  state = this.updateExpression();
 
   componentDidUpdate({ expression }) {
     if (this.props.expression !== expression)
-      this.setState({ expression: this.props.expression });
+      this.updateExpression();
+  }
+
+  updateExpression() {
+    const expression = this.props.expression || '';
+    const state = {
+      input: expression,
+      expression: this.isSafe(expression) ? expression : '',
+    };
+    return this.state ? this.setState(state) : state;
+  }
+
+  isSafe(expression) {
+    // An expression is assumed to have no side-effects
+    // when it does not contain method calls,
+    // which we conservatively identify by a parenthesis
+    return !expression.includes('(');
   }
 
   onChangeInput = event => {
@@ -18,10 +31,11 @@ export default class Playground extends React.Component {
   }
 
   onSubmitInput = event => {
-    const expression = this.state.input;
-    this.setState({ expression });
+    event.preventDefault();
+    const { input } = this.state;
+    this.setState({ expression: input });
     if (this.props.onExpressionChange)
-      this.props.onExpressionChange(expression);
+      this.props.onExpressionChange(input);
   }
 
   render() {
