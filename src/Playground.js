@@ -1,6 +1,6 @@
 import React from 'react';
-import data from '@solid/query-ldflex';
 import { Value, List } from '@solid/react';
+import { evaluate, isSafe } from './expressions';
 import './Playground.css';
 
 export default class Playground extends React.Component {
@@ -13,32 +13,16 @@ export default class Playground extends React.Component {
 
   updateExpression(input) {
     const expression = input || this.props.expression || '';
-    const safe = this.isSafe(expression);
+    const safe = isSafe(expression);
     const state = {
       input: expression,
       // Don't evaluate unsafe expressions unless the user asks
       expression: input || safe ? expression : '',
-      evaluation: input || safe ? this.evaluate(expression) : '',
+      evaluation: input || safe ? evaluate(expression) : '',
       // Avoid evaluating unsafe expressions a second time
       sparql: expression && safe ? `${expression}.sparql` : '',
     };
     return this.state ? this.setState(state) : state;
-  }
-
-  isSafe(expression) {
-    // An expression is assumed to have no side-effects
-    // when it does not contain method calls,
-    // which we conservatively identify by a parenthesis
-    return !expression.includes('(');
-  }
-
-  evaluate(expression) {
-    try {
-      return data.resolve(expression);
-    }
-    catch (error) {
-      return Promise.reject(error);
-    }
   }
 
   onChangeInput = event => {
