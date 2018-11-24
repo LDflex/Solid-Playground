@@ -3,27 +3,35 @@ import { Value, List } from '@solid/react';
 import './Playground.css';
 
 export default class Playground extends React.Component {
-  state = { expression: this.props.expression };
+  state = {
+    input: this.props.expression,
+    expression: this.props.expression,
+  };
 
   componentDidUpdate({ expression }) {
     if (this.props.expression !== expression)
       this.setState({ expression: this.props.expression });
   }
 
-  onExpressionChanged({ target: { value: expression } }) {
+  onChangeInput = event => {
+    this.setState({ input: event.target.value });
+  }
+
+  onSubmitInput = event => {
+    const expression = this.state.input;
     this.setState({ expression });
     if (this.props.onExpressionChange)
       this.props.onExpressionChange(expression);
   }
 
   render() {
-    const { expression } = this.state;
+    const { input, expression } = this.state;
     return (
-      <div className="playground">
+      <form className="playground" onSubmit={this.onSubmitInput}>
         <p className="expression">
           <label><code>solid.data</code></label>
-          <input value={expression}
-                 onChange={e => this.onExpressionChanged(e)}/>
+          <input value={input} onChange={this.onChangeInput} required />
+          <button>Execute</button>
         </p>
         <h3>Single result</h3>
         <p className="single"><Value src={expression}/></p>
@@ -33,7 +41,7 @@ export default class Playground extends React.Component {
         <pre className="sparql"><code>
           <Value src={expression && `${expression}.sparql`}/>
         </code></pre>
-      </div>
+      </form>
     );
   }
 }

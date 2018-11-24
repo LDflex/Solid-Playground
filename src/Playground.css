@@ -1,15 +1,33 @@
-.playground p.expression {
+form.playground p.expression {
   display: flex;
   align-items: center;
 }
-.playground p.expression * {
+form.playground p.expression label,
+form.playground p.expression input {
   font-family: monospace !important;
 }
-.playground p.expression input {
+form.playground p.expression input,
+form.playground p.expression button {
+  height: 2em;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+form.playground p.expression input {
   flex-grow: 1;
+  margin-right: 1ex;
+}
+form.playground p.expression button {
+  font-weight: bold;
+}
+form.playground p.expression button:hover,
+form.playground p.expression button:active {
+  background-color: #ccc;
+}
+form.playground p.expression button:active {
+  margin: 1px -1px -1px 1px;
 }
 
-.playground p.single [data-error]:before {
+form.playground p.single [data-error]:before {
   content: 'Expression error: ' attr(data-error);
   font-style: italic;
   font-weight: bold;
