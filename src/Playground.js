@@ -1,4 +1,5 @@
 import React from 'react';
+import data from '@solid/query-ldflex';
 import { Value, List } from '@solid/react';
 import './Playground.css';
 
@@ -10,11 +11,16 @@ export default class Playground extends React.Component {
       this.updateExpression();
   }
 
-  updateExpression() {
-    const expression = this.props.expression || '';
+  updateExpression(input) {
+    const expression = input || this.props.expression || '';
+    const safe = this.isSafe(expression);
     const state = {
       input: expression,
-      expression: this.isSafe(expression) ? expression : '',
+      // Don't evaluate unsafe expressions unless the user asks
+      expression: input || safe ? expression : '',
+      evaluation: input || safe ? this.evaluate(expression) : '',
+      // Avoid evaluating unsafe expressions a second time
+      sparql: expression && safe ? `${expression}.sparql` : '',
     };
     return this.state ? this.setState(state) : state;
   }
@@ -26,6 +32,15 @@ export default class Playground extends React.Component {
     return !expression.includes('(');
   }
 
+  evaluate(expression) {
+    try {
+      return data.resolve(expression);
+    }
+    catch (error) {
+      return Promise.reject(error);
+    }
+  }
+
   onChangeInput = event => {
     this.setState({ input: event.target.value });
   }
@@ -33,13 +48,13 @@ export default class Playground extends React.Component {
   onSubmitInput = event => {
     event.preventDefault();
     const { input } = this.state;
-    this.setState({ expression: input });
+    this.updateExpression(input);
     if (this.props.onExpressionChange)
       this.props.onExpressionChange(input);
   }
 
   render() {
-    const { input, expression } = this.state;
+    const { input, expression, evaluation, sparql } = this.state;
     return (
       <form className="playground" onSubmit={this.onSubmitInput}>
         <p className="expression">
@@ -47,14 +62,17 @@ export default class Playground extends React.Component {
           <input value={input} onChange={this.onChangeInput} required />
           <button>Execute</button>
         </p>
+        <h3>Expression</h3>
+        <pre className="expression"><code>{expression}</code></pre>
+
         <h3>Single result</h3>
-        <p className="single"><Value src={expression}/></p>
+        <p className="single"><Value src={evaluation}/></p>
+
         <h3>Multiple results (first 10)</h3>
-        <List src={expression} limit="10"/>
+        <List src={evaluation} limit="10"/>
+
         <h3>Corresponding SPARQL query</h3>
-        <pre className="sparql"><code>
-          <Value src={expression && `${expression}.sparql`}/>
-        </code></pre>
+        <pre className="sparql"><code><Value src={sparql}/></code></pre>
       </form>
     );
   }
