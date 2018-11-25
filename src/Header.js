@@ -9,8 +9,8 @@ export default function Header() {
       <p>
         <LoggedOut>You are not logged in.</LoggedOut>
         <LoggedIn>Welcome, <Value src="user.name"/>!</LoggedIn>
-        <AuthButton popup="https://solid.community/.well-known/solid/login"/>
       </p>
+      <AuthButton popup="https://solid.community/.well-known/solid/login"/>
     </header>
   );
 }

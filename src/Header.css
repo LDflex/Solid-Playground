@@ -1,3 +1,16 @@
-header button {
-  margin-left: 2em;
+header {
+  display: relative;
+  color: white;
+  text-shadow: 2px 2px 2px var(--color-accent);
+  background: var(--color-accent) calc(100% - var(--main-padding)) no-repeat url(solid.svg);
+  border-radius: 20px 20px 0 0;
+  margin: calc(-1 * var(--main-padding));
+  padding: var(--main-padding);
+}
+header h1 {
+  margin: .25em 0;
+}
+header p {
+  display: inline;
+  margin-right: 1em;
 }

@@ -1,8 +1,47 @@
+html {
+  --color-accent: #3f1ca0;
+  --color-highlight: #936dfd;
+  background: #083575;
+  height: 100%;
+}
+
 body, input, button {
-  font: 12pt/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 11pt/1.4 Lato, "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
-  max-width: 800px;
-  margin: 0 auto;
+  --main-padding: 20px;
+  max-width: 860px;
+  margin: 40px auto;
+  padding: 10px var(--main-padding);
+  background-color: white;
+  border-radius: 21px;
+  box-shadow: 0 0 40px rgb(0, 0, 0, .5);
+}
+
+input, button {
+  height: 2em;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: #eee;
+}
+
+button {
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover, button:active {
+  color: white;
+  background: var(--color-highlight);
+}
+button:active {
+  background: var(--color-accent);
+}
+
+a {
+  color: var(--color-accent);
+}
+a:hover {
+  color: var(--color-highlight);
 }
