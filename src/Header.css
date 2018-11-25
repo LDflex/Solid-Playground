@@ -14,3 +14,9 @@ header p {
   display: inline;
   margin-right: 1em;
 }
+header a {
+  color: white;
+}
+header a:hover {
+  color: var(--color-highlight);
+}
