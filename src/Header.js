@@ -1,5 +1,5 @@
 import React from 'react';
-import { LoggedIn, LoggedOut, AuthButton, Value } from '@solid/react';
+import { LoggedIn, LoggedOut, AuthButton, Link, Name } from '@solid/react';
 import './Header.css';
 
 export default function Header() {
@@ -8,7 +8,7 @@ export default function Header() {
       <h1>Solid LDflex playground</h1>
       <p>
         <LoggedOut>You are not logged in.</LoggedOut>
-        <LoggedIn>Welcome, <Value src="user.name"/>!</LoggedIn>
+        <LoggedIn>Welcome, <Link href="user"><Name src="user"/></Link>!</LoggedIn>
       </p>
       <AuthButton popup="https://solid.community/.well-known/solid/login"/>
     </header>
