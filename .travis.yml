@@ -20,5 +20,4 @@ after_success:
       ./.travis_build_pages;
     fi
 
-cache:
-  apt: true
+cache: yarn
