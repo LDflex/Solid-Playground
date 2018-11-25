@@ -53,11 +53,18 @@ export default class Playground extends React.Component {
         <p className="single"><Value src={evaluation}/></p>
 
         <h3>Multiple results (first 10)</h3>
-        <List src={evaluation} limit="10"/>
+        <List src={evaluation} limit="10">{(item, i) =>
+          <li key={i}>{linkTo(`${item}`)}</li>}
+        </List>
 
         <h3>Corresponding SPARQL query</h3>
         <pre className="sparql"><code><Value src={sparql}/></code></pre>
       </form>
     );
   }
+}
+
+function linkTo(dest) {
+  return !/^https?:/.test(dest) ? dest :
+    <a href={dest} target="_blank" rel="noopener noreferrer">{dest}</a>;
 }
