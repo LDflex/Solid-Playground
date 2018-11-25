@@ -6655,9 +6655,9 @@ ldflex-comunica@^1.0.1:
     "@comunica/actor-init-sparql" "^1.3.0"
 
 ldflex@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/ldflex/-/ldflex-1.3.0.tgz#866c1f729171e6da5d1abbb7de094367bb3580a6"
-  integrity sha512-FePcdEnFs5ubR+pIf36aYrZn4cUnaqw3SIPQ42t/cF0DKzPVbhucwIVZcaHQtBUJ3WDLr6uXLP1kTOPvYbDD+A==
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/ldflex/-/ldflex-1.3.1.tgz#207c93ac3020b687a3e8ace099d8a8d36f467a05"
+  integrity sha512-ywYrs2NXTgN4WuZ4R65QijgXJk+ncqZT5FFFH/C95CGKx7vWEqbNgbyoH2KNVLYJ0faNMemdk6Ze6/r2ZsGiHQ==
   dependencies:
     "@babel/runtime" "^7.1.5"
     jsonld "^1.1.0"
