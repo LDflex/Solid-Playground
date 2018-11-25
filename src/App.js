@@ -18,10 +18,11 @@ class App extends React.Component {
     window.location.replace(`#${encodeURIComponent(expression)}`);
   }
 
-  componentDidUpdate({ webId }, { expression }) {
+  componentDidUpdate(prevProps) {
     // If the user just logged in, show an example with their WebID
-    if (!this.savedState.expression && this.props.webId !== webId)
-      this.setState({ expression: `[${this.props.webId}].name` });
+    const { webId } = this.props;
+    if (webId && webId !== prevProps.webId && !this.savedState.expression)
+      this.setState({ expression: `[${webId}].name` });
   }
 
   onExpressionChange = expression => {
