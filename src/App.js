@@ -39,7 +39,7 @@ class App extends React.Component {
           <a href="https://solid.github.io/query-ldflex/">
             Solid LDflex</a> expression
         </h2>
-        <Playground expression={this.state.expression || defaultExpression }
+        <Playground expression={this.state.expression || defaultExpression}
                     onExpressionChange={this.onExpressionChange}/>
       </main>
       <Footer/>
