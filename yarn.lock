@@ -1659,27 +1659,26 @@
     text-encoding "^0.6.4"
     whatwg-url "^6.4.1"
 
-"@solid/query-ldflex@^2.0.0", "@solid/query-ldflex@^2.3.1":
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/@solid/query-ldflex/-/query-ldflex-2.3.1.tgz#fe01735f5c835bb2f96a0caf9faa199e49259451"
-  integrity sha512-lS6I5UZm2sMU1T3j3QQntLy9mgyjy0G4JjZuekmpvjmwH8asyD0BBW36SxJ+AWNeXSdFqDpNYxu3b53xteWXcQ==
+"@solid/query-ldflex@^2.5.1":
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/@solid/query-ldflex/-/query-ldflex-2.5.1.tgz#f6b180be666493ee167f799b9243d38345d556a1"
+  integrity sha512-IjcxlH1zXl4gLZq5EfPhXSPs2atac9iheoE4YziGtVtKpbSRlnMZKxx1Ky426LA/sGjuJp6P6WYISRwKWCRJoQ==
   dependencies:
     "@rdfjs/data-model" "^1.1.1"
-    ldflex "^2.1.0"
-    ldflex-comunica "^2.4.0"
+    ldflex "^2.2.0"
+    ldflex-comunica "^3.0.0"
     solid-auth-client "^2.2.14"
     uuid "^3.3.2"
 
-"@solid/react@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@solid/react/-/react-1.3.1.tgz#5f6d497c0914eb71474fbf2fb8f87d932ab026c1"
-  integrity sha512-KabTeZdWjr3nrUYL4QborSlFyUTZt3biy3uLL7k7OYoHIuWYMxwfkdhoMRH1Oa1q+lnfOz6mJCai9PqNZPlyCg==
+"@solid/react@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@solid/react/-/react-1.6.0.tgz#67d9ca4111eb114a4f9e8a72bc952ea0718df481"
+  integrity sha512-Ea4/h8HFk0rdRyljgNBjl2Wmvp1FyOereUwtqLw8BEgeSD/V8qPyd8f4SyvblcVKdTjvYB2GaPdg8vBwdfO9ZQ==
   dependencies:
     "@babel/runtime" "^7.1.2"
-    "@solid/query-ldflex" "^2.0.0"
+    "@solid/query-ldflex" "^2.5.1"
     prop-types "^15.6.2"
-    react "^16.5.2"
-    solid-auth-client "^2.2.14"
+    solid-auth-client "^2.3.0"
 
 "@svgr/babel-plugin-add-jsx-attribute@^4.0.0":
   version "4.0.0"
@@ -6851,19 +6850,19 @@ lcid@^2.0.0:
   dependencies:
     invert-kv "^2.0.0"
 
-ldflex-comunica@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/ldflex-comunica/-/ldflex-comunica-2.4.0.tgz#45f3a8e5d26d0fca9a6cfb605f663abab9879cb8"
-  integrity sha512-OrVGPl2Cya+jSEWhqR5AstDW2LxEg/5m6org0Wde9Hm8fKW068/DrQO0/WOxXCLQLMRScuyjwUbTVTc5idgydQ==
+ldflex-comunica@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/ldflex-comunica/-/ldflex-comunica-3.0.0.tgz#3f63c08b926f8a01398a5956b2b30aa57cade072"
+  integrity sha512-Vwu09hZ9EkhQA+YQSP7CRyAKDxyeuTjvdJ8sA+7dL+AwwhjWgVR8hkYbV1NWTGiEQjdheEv5WIWM7nx8kljbkQ==
   dependencies:
     "@comunica/actor-http-solid-auth-fetch" "^1.0.0"
     "@comunica/actor-init-sparql" "^1.6.0"
     "@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source" "^1.6.0"
 
-ldflex@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/ldflex/-/ldflex-2.1.0.tgz#8edfe48be0a96c8e0ab37a2d60a6de9e3ed2b28f"
-  integrity sha512-IceMLWv9JJ9yA664F6NM0OafUjIi1Cy4ByQAMYenQfUvJLjqsjJNOs6A4G9g8EaRJzwx5Vp17BWJN7QkuIUXSA==
+ldflex@^2.2.0:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/ldflex/-/ldflex-2.2.1.tgz#5368f354f391c67f5fdcfd0e9d4eb3010c5080ab"
+  integrity sha512-e96zCSGRyOIpgDIcQe6mFb/H5uu1E6yNghm7OetQdvbdyxCmbNvxZDoY1+of+g/GNlwvn/cnQ58jhy8TObL14g==
   dependencies:
     "@babel/runtime" "^7.1.5"
     "@rdfjs/data-model" "^1.1.1"
@@ -9173,15 +9172,15 @@ react-dev-utils@^7.0.3:
     strip-ansi "5.0.0"
     text-table "0.2.0"
 
-react-dom@^16.6.0:
-  version "16.8.3"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.3.tgz#ae236029e66210783ac81999d3015dfc475b9c32"
-  integrity sha512-ttMem9yJL4/lpItZAQ2NTFAbV7frotHk5DZEHXUOws2rMmrsvh1Na7ThGT0dTzUIl6pqTOi5tYREfL8AEna3lA==
+react-dom@^16.8.4:
+  version "16.8.4"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.4.tgz#1061a8e01a2b3b0c8160037441c3bf00a0e3bc48"
+  integrity sha512-Ob2wK7XG2tUDt7ps7LtLzGYYB6DXMCLj0G5fO6WeEICtT4/HdpOi7W/xLzZnR6RCG1tYza60nMdqtxzA8FaPJQ==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
-    scheduler "^0.13.3"
+    scheduler "^0.13.4"
 
 react-error-overlay@^5.1.3:
   version "5.1.3"
@@ -9248,15 +9247,15 @@ react-scripts@^2.1.5:
   optionalDependencies:
     fsevents "1.2.4"
 
-react@^16.5.2, react@^16.6.0:
-  version "16.8.3"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.8.3.tgz#c6f988a2ce895375de216edcfaedd6b9a76451d9"
-  integrity sha512-3UoSIsEq8yTJuSu0luO1QQWYbgGEILm+eJl2QN/VLDi7hL+EN18M3q3oVZwmVzzBJ3DkM7RMdRwBmZZ+b4IzSA==
+react@^16.8.4:
+  version "16.8.4"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.8.4.tgz#fdf7bd9ae53f03a9c4cd1a371432c206be1c4768"
+  integrity sha512-0GQ6gFXfUH7aZcjGVymlPOASTuSjlQL4ZtVC5YKH+3JL6bBLCVO21DknzmaPlI90LN253ojj02nsapy+j7wIjg==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
-    scheduler "^0.13.3"
+    scheduler "^0.13.4"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"
@@ -9735,10 +9734,10 @@ sax@^1.2.4, sax@~1, sax@~1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-scheduler@^0.13.3:
-  version "0.13.3"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.13.3.tgz#bed3c5850f62ea9c716a4d781f9daeb9b2a58896"
-  integrity sha512-UxN5QRYWtpR1egNWzJcVLk8jlegxAugswQc984lD3kU7NuobsO37/sRfbpTdBjtnD5TBNFA2Q2oLV5+UmPSmEQ==
+scheduler@^0.13.4:
+  version "0.13.4"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.13.4.tgz#8fef05e7a3580c76c0364d2df5e550e4c9140298"
+  integrity sha512-cvSOlRPxOHs5dAhP9yiS/6IDmVAVxmk33f0CtTJRkmUWcb1Us+t7b1wqdzoC0REw2muC9V5f1L/w5R5uKGaepA==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -9999,10 +9998,10 @@ sockjs@0.3.19:
     faye-websocket "^0.10.0"
     uuid "^3.0.1"
 
-solid-auth-client@^2.2.14:
-  version "2.2.14"
-  resolved "https://registry.yarnpkg.com/solid-auth-client/-/solid-auth-client-2.2.14.tgz#e856707bb7f2674fdc55ee41ab77ea700f164101"
-  integrity sha512-gv8NrNrdg1VFZlzxLydRrztcSNlG0ArZdQe5DZQ5+/SXcgVyZSxpmo+ZkagKLRrIBwH0u/SGNzURpNLnxYmC+Q==
+solid-auth-client@^2.2.14, solid-auth-client@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/solid-auth-client/-/solid-auth-client-2.3.0.tgz#4bac06984b61981ad9d06f285b8ead6200f21aaa"
+  integrity sha512-+9RfqC64oWpH4afoWYhCtieuAziFyWiiW/isB9XEV6N+yb2jZ69UCJxpX7iBCpxK0j36bDeisdbp0zHRp/F46A==
   dependencies:
     "@babel/runtime" "^7.0.0"
     "@solid/oidc-rp" "^0.8.0"
