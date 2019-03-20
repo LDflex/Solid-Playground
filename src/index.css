@@ -19,7 +19,7 @@ body {
   box-shadow: 0 0 40px rgb(0, 0, 0, .5);
 }
 
-input, button {
+button, input:not([type=checkbox]) {
   height: 2em;
   border: 1px solid #ccc;
   box-sizing: border-box;

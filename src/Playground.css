@@ -12,7 +12,7 @@ form.playground ul {
 form.playground p.expression {
   display: flex;
   align-items: center;
-  padding: 0;
+  padding: 0 0 .5em;
 }
 form.playground p.expression label,
 form.playground p.expression input {
@@ -25,6 +25,11 @@ form.playground p.expression button {
 form.playground p.expression input {
   flex-grow: 1;
   margin-right: 1ex;
+}
+
+form.playground p.multiple {
+  font-style: italic;
+  text-align: right;
 }
 
 form.playground p.single [data-error]:before {
