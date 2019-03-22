@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "https://solid.github.io/ldflex-playground/precache-manifest.abf8003f928d47ca89614d72d8a62318.js"
+  "https://solid.github.io/ldflex-playground/precache-manifest.5c326a0f30e80c55542bf7f6042b71d8.js"
 );
 
 workbox.clientsClaim();
