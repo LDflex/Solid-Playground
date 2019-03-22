@@ -1,4 +1,18 @@
 footer {
-  font-size: .9em;
-  text-align: right;
+  display: flex;
+  align-items: baseline;
+}
+footer, footer * {
+  font-size: .95em;
+}
+
+footer p {
+  margin-bottom: 0.25em;
+}
+footer p:first-child {
+  flex-grow: 1;
+}
+
+button.like:before {
+  content: "👍 ";
 }
