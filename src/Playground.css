@@ -27,6 +27,10 @@ form.playground p.expression input {
   margin-right: 1ex;
 }
 
+form.playground pre.expression {
+  overflow: auto;
+}
+
 form.playground p.multiple {
   font-style: italic;
   text-align: right;
