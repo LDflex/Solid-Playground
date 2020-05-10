@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8777495c0b614f9ae0b04006a1ddeb03",
+    "revision": "2dec4f99413bcc2a8e7bcbaa2936c9b0",
     "url": "https://solid.github.io/ldflex-playground/index.html"
   },
   {
-    "revision": "e6b3039dd9da733c70c9",
-    "url": "https://solid.github.io/ldflex-playground/static/css/main.0857f795.chunk.css"
+    "revision": "6b77b6b2c996e3b9b6fe",
+    "url": "https://solid.github.io/ldflex-playground/static/css/main.c5992c47.chunk.css"
   },
   {
     "revision": "8bb7f2e533ae0d5aa96b",
     "url": "https://solid.github.io/ldflex-playground/static/js/2.47e97a4a.chunk.js"
   },
   {
-    "revision": "e6b3039dd9da733c70c9",
+    "revision": "6b77b6b2c996e3b9b6fe",
     "url": "https://solid.github.io/ldflex-playground/static/js/main.d12af585.chunk.js"
   },
   {
