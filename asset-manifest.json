@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "https://solid.github.io/ldflex-playground/static/css/main.bbb9eaed.chunk.css",
+    "main.css": "https://solid.github.io/ldflex-playground/static/css/main.7f1bc8ae.chunk.css",
     "main.js": "https://solid.github.io/ldflex-playground/static/js/main.2b4446f8.chunk.js",
     "main.js.map": "https://solid.github.io/ldflex-playground/static/js/main.2b4446f8.chunk.js.map",
     "runtime~main.js": "https://solid.github.io/ldflex-playground/static/js/runtime~main.2854be9d.js",
@@ -8,9 +8,9 @@
     "static/js/2.47e97a4a.chunk.js": "https://solid.github.io/ldflex-playground/static/js/2.47e97a4a.chunk.js",
     "static/js/2.47e97a4a.chunk.js.map": "https://solid.github.io/ldflex-playground/static/js/2.47e97a4a.chunk.js.map",
     "index.html": "https://solid.github.io/ldflex-playground/index.html",
-    "precache-manifest.b06ea97c787e77ac337db46b1796aff7.js": "https://solid.github.io/ldflex-playground/precache-manifest.b06ea97c787e77ac337db46b1796aff7.js",
+    "precache-manifest.c0a3b5a5070dcf00bbca4de5bf03e256.js": "https://solid.github.io/ldflex-playground/precache-manifest.c0a3b5a5070dcf00bbca4de5bf03e256.js",
     "service-worker.js": "https://solid.github.io/ldflex-playground/service-worker.js",
-    "static/css/main.bbb9eaed.chunk.css.map": "https://solid.github.io/ldflex-playground/static/css/main.bbb9eaed.chunk.css.map",
+    "static/css/main.7f1bc8ae.chunk.css.map": "https://solid.github.io/ldflex-playground/static/css/main.7f1bc8ae.chunk.css.map",
     "static/media/Header.css": "https://solid.github.io/ldflex-playground/static/media/solid.a22f9cc3.svg"
   }
 }
