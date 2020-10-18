@@ -10,7 +10,7 @@ export default function Header() {
         <LoggedOut>You are not logged in.</LoggedOut>
         <LoggedIn>Welcome, <Link href="user"><Name src="user"/></Link>!</LoggedIn>
       </p>
-      <AuthButton popup="https://solid.community/.well-known/solid/login"/>
+      <AuthButton popup="https://solidcommunity.net/.well-known/solid/login"/>
     </header>
   );
 }
