@@ -31,6 +31,10 @@ form.playground pre.expression {
   overflow: auto;
 }
 
+form.playground pre.sparql {
+  overflow-x: auto;
+}
+
 form.playground p.multiple {
   font-style: italic;
   text-align: right;
