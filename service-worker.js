@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://solid.github.io/ldflex-playground/precache-manifest.15e480206862687f3f59c2dafa5b01fb.js"
+  "https://solid.github.io/ldflex-playground/precache-manifest.b06ea97c787e77ac337db46b1796aff7.js"
 );
 
 self.addEventListener('message', (event) => {
