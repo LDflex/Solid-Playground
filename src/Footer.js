@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer>
       <p>
-        <Like object="https://solid.github.io/ldflex-playground/">the LDflex playground</Like>
+        <Like object="https://ldflex.github.io/Solid-Playground/">the LDflex playground</Like>
       </p>
       <p>
         Created by 
@@ -14,7 +14,7 @@ export default function Footer() {
           <Label src="[https://ruben.verborgh.org/profile/#me]"/>
         </Link>.
         Source code on 
-        <a href="https://github.com/solid/ldflex-playground">GitHub</a>.
+        <a href="https://github.com/LDflex/Solid-Playground/">GitHub</a>.
       </p>
     </footer>
   );

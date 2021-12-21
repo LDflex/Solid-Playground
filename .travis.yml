@@ -6,7 +6,7 @@ env:
   - DEFAULT_NODE_VERSION=10
 
 before_script:
-  - PUBLIC_URL=https://solid.github.io/ldflex-playground/ yarn build
+  - PUBLIC_URL=https://ldflex.github.io/Solid-Playground/ yarn build
 
 after_success:
   - if [ "$TRAVIS_NODE_VERSION" == "$DEFAULT_NODE_VERSION" ]; then
